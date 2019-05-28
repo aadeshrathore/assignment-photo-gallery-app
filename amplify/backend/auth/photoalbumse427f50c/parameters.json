@@ -1,0 +1,68 @@
+{
+    "identityPoolName": "photoalbumse427f50c_identitypool_e427f50c",
+    "allowUnauthenticatedIdentities": false,
+    "lambdaLogPolicy": "photoa_e427f50c_lambda_log_policy",
+    "openIdLambdaRoleName": "photoa_e427f50c_openid_lambda_role",
+    "openIdRolePolicy": "photoa_e427f50c_openid_pass_role_policy",
+    "openIdLambdaIAMPolicy": "photoa_e427f50c_openid_lambda_iam_policy",
+    "openIdLogPolicy": "photoa_e427f50c_openid_lambda_log_policy",
+    "userPoolName": "photoalbumse427f50c_userpool_e427f50c",
+    "autoVerifiedAttributes": [
+        "email"
+    ],
+    "mfaConfiguration": "OFF",
+    "mfaTypes": [
+        "SMS Text Message"
+    ],
+    "roleName": "photoae427f50c_sns-role",
+    "roleExternalId": "photoae427f50c_role_external_id",
+    "policyName": "photoae427f50c-sns-policy",
+    "smsAuthenticationMessage": "Your authentication code is {####}",
+    "smsVerificationMessage": "Your verification code is {####}",
+    "emailVerificationSubject": "Your verification code",
+    "emailVerificationMessage": "Your verification code is {####}",
+    "defaultPasswordPolicy": false,
+    "passwordPolicyMinLength": 8,
+    "passwordPolicyCharacters": [],
+    "requiredAttributes": [
+        "email"
+    ],
+    "userpoolClientName": "photoae427f50c_app_client",
+    "userpoolClientGenerateSecret": true,
+    "userpoolClientRefreshTokenValidity": 30,
+    "userpoolClientWriteAttributes": [
+        "email"
+    ],
+    "userpoolClientReadAttributes": [
+        "email"
+    ],
+    "mfaLambdaRole": "photoae427f50c_totp_lambda_role",
+    "mfaLambdaLogPolicy": "photoae427f50c_totp_lambda_log_policy",
+    "mfaPassRolePolicy": "photoae427f50c_totp_pass_role_policy",
+    "mfaLambdaIAMPolicy": "photoae427f50c_totp_lambda_iam_policy",
+    "userpoolClientLambdaRole": "photoae427f50c_userpoolclient_lambda_role",
+    "userpoolClientLogPolicy": "photoae427f50c_userpoolclient_lambda_log_policy",
+    "userpoolClientLambdaPolicy": "photoae427f50c_userpoolclient_lambda_iam_policy",
+    "userpoolClientSetAttributes": false,
+    "resourceName": "photoalbumse427f50c",
+    "authSelections": "identityPoolAndUserPool",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    },
+    "unauthRoleArn": {
+        "Fn::GetAtt": [
+            "UnauthRole",
+            "Arn"
+        ]
+    },
+    "useDefault": "default"
+}

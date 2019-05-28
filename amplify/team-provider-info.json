@@ -1,0 +1,19 @@
+{
+    "linux": {
+        "awscloudformation": {
+            "AuthRoleName": "photo-albums-linux-20190522090432-authRole",
+            "UnauthRoleArn": "arn:aws:iam::092510206269:role/photo-albums-linux-20190522090432-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::092510206269:role/photo-albums-linux-20190522090432-authRole",
+            "Region": "us-east-2",
+            "DeploymentBucketName": "photo-albums-linux-20190522090432-deployment",
+            "UnauthRoleName": "photo-albums-linux-20190522090432-unauthRole",
+            "StackName": "photo-albums-linux-20190522090432",
+            "StackId": "arn:aws:cloudformation:us-east-2:092510206269:stack/photo-albums-linux-20190522090432/84c04670-7c42-11e9-87fd-0626229bfdda"
+        },
+        "categories": {
+            "auth": {
+                "photoalbumse427f50c": {}
+            }
+        }
+    }
+}
